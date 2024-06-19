@@ -1,37 +1,24 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-function HomeScreen(props) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
-      <Button 
-      title='About'
-      onPress={() => props.navigation.navigate("About")}
-      />
-    </View>
-  );
-}
+import HomeScreen from "./components/views/HomeScreen";
 
 function AboutScreen(props) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>About</Text>
-      <Button 
-      title='SAC'
-      onPress={() => props.navigation.navigate("SAC")}
-      />
+    <View style={{flex: 1, paddingTop: 10, paddingLeft: 10 }}>
+      <Text>SOBRE</Text>
+      
     </View>
   );
 }
 
-function SacScreen(props) {
+function EquipeScreen(props) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>SAC</Text>
+    <View style={{ flex: 1, paddingTop: 10, paddingLeft: 10 }}>
+      <Text>EQUIPE</Text>
     </View>
   );
 }
@@ -44,7 +31,7 @@ function App() {
       <Drawer.Navigator>
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="About" component={AboutScreen} />
-        <Drawer.Screen name="SAC" component={SacScreen} />
+        <Drawer.Screen name="Equipe" component={EquipeScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
