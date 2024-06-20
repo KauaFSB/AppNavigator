@@ -22,6 +22,8 @@ export default function HomeScreen(props) {
          {/*Fim da imagem*/}
 
          <Text style={estilos.titulo}>A MELHOR ESCOLA</Text>
+
+         <Text>A Escolas Integradas ”Prof. Nivaldo Salch Stipp” é mantida pela FunBBE (Fundação Barra Bonita de Ensino), e tem sua sede na cidade de Barra Bonita, no interior do estado de São Paulo. Fundada em 1963, era conhecida como Colégio Comercial de Barra Bonita, não possuindo ainda uma estrutura bem definida. Somente em 1966 surge como personalidade jurídica, adequando-se à Lei 493 do ano em vigência, sancionada pelo então prefeito da época, Dr. Clodoaldo Antonângelo. Passa então a dispor sobre a criação da Fundação Barra Bonita de Ensino, ou como é popularmente conhecida, FunBBE, que passa a ser a instituição mantenedora do Colégio Comercial e dos demais cursos implementados por ela.</Text>
       </View>
     );
   }
@@ -34,6 +36,9 @@ export default function HomeScreen(props) {
     },
     titulo: {
         fontWeight: "bold",
-        fontSize: 23
+        fontSize: 23,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
     }
   })
